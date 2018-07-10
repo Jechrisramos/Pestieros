@@ -1,11 +1,16 @@
 @font-face {
     font-family: backtonature;
-    src: url(../../naturebeauty.ttf);
+    src: url(../../Delicious-Adventures.ttf);
 }
 
 @font-face {
     font-family: roboto;
     src: url(../../Roboto-Regular.ttf);
+}
+
+@font-face {
+	font-family: soc-med-txt;
+	src: url(../../Social-Media-Circled.otf);
 }
 
 /*default*/
@@ -21,57 +26,24 @@ body {
 	background-color: #d4d3d3;
 }
 
-h1, h2, h3, h4, h5, h6 {
-	font-family: backtonature, sans-serif;
-	color: #ff7a85;
-
-}
-
-/*Elements*/
-.col h1, h2 {
-	color: #ffffff;
-	background-color: #14ba85;
-	text-align: center;
-	margin: 0px;
-}
-
-.main-title {
-	font-size: 3.5em;
-}
-
-.subtitle {
-	font-size: 1em;
-	border-bottom: 10px;
-}
-
-.nav {
-	background-color: #8d8e8e;
-	width: 100%;
+h1, h2, h3, h4, h5, h6, .header > p > small {
+	font-family: backtonature;
+	color: white;
 }
 
 a {
+	font-family: soc-med-txt;
+	font-size: 2.5em;
 	text-decoration: none;
-	color: #ffffff;
-	background-color: #14ba85; 
-	width: 15%;
-	float: left;
-	margin: 5px;
-	padding: 5px;
-	text-align: center;
-	border-top-left-radius: 10px;
-	border-bottom-right-radius: 10px;
+	color: #d4d3d3;
+
 }
+
 /*classes*/
 .clear:after { /*used to clear floats (don't forget to add this class name to the div we want with float)*/
  	content: "";
  	display: block;
  	clear: both;
-}
-
-
-.container {
-	max-width: 960px;
-	margin: auto;
 }
 
 .row:after {
@@ -81,32 +53,107 @@ a {
 	clear: both;
 }
 
-.header {
-	min-height: 150px;
-	/*background-color: darkviolet;*/
-}
-
-.main {
-	min-height: 700px;
-	background-color: white;
-}
-
-.footer {
-	height: 100px;
-	background-color: #14ba85;
-}
-
 .col {
 
 }
 
 .left {
-	height: 700px;
-	padding: 10px;
+	width: 50%;
+	height: 350px;
+	padding: 1.5px;
+	float: left;
+	/*background-color: #fff;*/
 }
 
 .right {
+	width: 50%;
 	height: 350px;
+	padding: 1.5px;
+	float: left;
+	/*background-color: #fff;*/
+}
+
+.main > h2, .left > h2, .right > h2 {
+	margin-top: 10px;
+	padding: 3px 15px;
+	color: ;
+	background-color: #027010;
+}
+
+.container {
+
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.header {
+	padding: 3px 15px;
+	margin-bottom: 10px;
+	font-size: 2.5em;
+	text-align: center;
+}
+
+.header > h1 {
+	margin-bottom: -25px;
+}
+
+.nav {
+	width: 100%;
+	height: 100%;
+	margin: auto;
+	padding: 10px;
+	color: #fff;
+	background-color: #8e8d8d;
+}
+
+.nav > a {
+	font-family: roboto;
+	font-size: 14px;
+	padding: 5px 15px;
+	background: #026820;
+	border-radius: 5px; 
+	text-decoration: none; 
+}
+.header, .footer {
+	background-color: #027010;
+}
+
+
+.main {
+	width: 100%;
+	min-height: 700px;
+}
+
+.main-img {
+	width: 100%;
+	height: 500px;
+	background: url(../images/pasta-main.jpg);
+	background-size: cover;
+}
+
+.sec-img1 {
+	width: 100%;
+	height: 250px;
+	background: url(../images/berry-cinamon-cheesecake-cups.jpg);
+	background-repeat: no-repeat;
+	padding: 5px, 10px;
+}
+
+.sec-img2 {
+	width: 100%;
+	height: 250px;
+	background: url(../images/coffee.jpg);
+	background-size: cover;
+	padding: 5px, 10px;
+}
+
+.footer {
+	padding: 10px;
+}
+
+.copyright > p {
+	float: right;
+	color: #d4d3d3;
 }
 
 /*media queries*/
@@ -261,4 +308,6 @@ a {
 		width: 100%; /*100%/12 *12*/
 	}
 }
+
+
 
